@@ -1,0 +1,77 @@
+.destination-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.destination-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.destination-info {
+    max-width: 50%;
+}
+
+.destination-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #639;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #527;
+}
+
+
+.destination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-section, .info-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.places-section .card {
+    margin: 15px 0;
+}
+
+.create-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #639;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.destination-container, .places-heading, .places-carousel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+}

@@ -1,0 +1,59 @@
+/* Ensure that the body takes up the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Make sure the container takes up the remaining space */
+.container {
+    flex-grow: 1;
+}
+
+/* Flexbox for the body to push footer to the bottom */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer specific styling */
+.footer {
+    background-color: #f8f9fa;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Adds a dark transparent background to footer for better visibility */
+    color: white;
+}
+
+/* base.css */
+body {
+    background-image: url('{% static "images/bg1.jpg" %}');
+    background-size: cover;         /* Ensures the image covers the entire body without distortion */
+    background-position: center;    /* Keeps the image centered */
+    background-attachment: fixed;   /* Keeps the image fixed while scrolling */
+    background-repeat: no-repeat;   /* Prevents repeating the image */
+    height: 100vh;                  /* Ensures the background takes up full height */
+    margin: 0;                      /* Removes any default margin */
+}
+
+/* Optional: If you want to adjust the image size to fit without cropping, you can try 'contain' */
+body {
+    background-image: url('{% static "images/bg1.jpg" %}');
+    background-size: contain;      /* Ensures the entire image is visible but may leave space around it */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto 100%;  /* Adjust background size for smaller screens */
+    }
+}
+
